@@ -5,6 +5,7 @@ function volume_sphere() {
 	let vol=((4/3)*(22/7)*rad*rad*rad);
 	
 	volume.value=vol; */
+	event.preventDefault();
   var radius = document.getElementById("radius").value;
 	 var volume = (4/3) * Math.PI * Math.pow(radius, 3);
 	  document.getElementById("volume").value = volume;
@@ -13,3 +14,11 @@ function volume_sphere() {
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+/* const form=document.getElementById('MyForm');
+form.addEventListner('submit',()=>{
+	volume_sphere();
+});
+ */
+
+
+
