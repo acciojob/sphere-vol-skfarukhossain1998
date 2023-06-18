@@ -1,11 +1,13 @@
 function volume_sphere() {
-    const radius=document.getElementById('radius');
+    /* const radius=document.getElementById('radius');
 	const volume=document.getElementById('volume');
 	let rad=radius.value;
 	let vol=((4/3)*(22/7)*rad*rad*rad);
 	
-	volume.value=vol;
-
+	volume.value=vol; */
+  var radius = document.getElementById("radius").value;
+	 var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+	  document.getElementById("volume").value = volume;
 	
   
 } 
